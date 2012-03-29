@@ -32,4 +32,10 @@ puts "Here is a puzzle."
 
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
-puts "That becomes: #{what} Can you do it by hand?"
+puts "That becomes: #{what} Can you do it by hand?"  # yes, or rather, with a calculator  
+
+#  Formula:  random_amount = age*iq/(weight-height)
+random_amount = divide(multiply(age, iq), subtract(weight, height))
+puts "The random amount calculated by this formula is #{random_amount}."
+
+
